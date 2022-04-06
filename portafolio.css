@@ -1,0 +1,456 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --blanco: #f0efeb;
+    --negro: #333;
+    --espacio: 30px;
+    --ancho: 100%;
+}
+
+body{
+    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #f0efeb;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* HEADER */
+
+/*---HEADER--*/
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 2%, 71%, 0.993), hsla(0, 97%, 45%, 0.664)), url(img/header-img.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 100%, 2%, 0.712), hsla(0, 26%, 7%, 0.664)), url(img/header-img.jpg);
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav .icono{
+    font-size: 40px;
+    display: none;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0 ;
+    width: 100%;
+    height: 8vh;
+}
+
+nav a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height:  430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+/*--MAIN---*/
+
+/* quien soy */
+ main .bio{
+     width: var(--ancho);
+     padding: 30px;
+     background-color: var(--blanco);
+ }
+
+ main .bio-texto{
+     padding: 20px  ;
+     background: #f0efeb;
+     overflow: hidden;
+ }
+
+ /* secion de contacto  */
+main .bio-texto .contacto img{
+float: right;
+}
+
+main .redes a{
+    padding: 10px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+    transition: all 300ms;
+}
+
+main .redes a:hover{
+    transform: scale(1.2);
+    color: #e63946;
+}
+ .cv{
+     margin-top: 20px;
+ }
+ .cv a{
+     padding: 10px; 
+     background: #333;
+     color: #f0efeb;
+     text-decoration: none;
+     transition: 0.5s ease-in-out;
+ }
+
+ .cv a:hover{
+     color: #333;
+     background: #f0efeb;
+     transition: 0.5s ease-in-out;
+ }
+
+ main .bio-texto img{
+     width: 40%;
+     margin: 5px;
+     float: left;
+     border-radius: 28% 72% 49% 51% / 62% 80% 20% 38% ;
+ }
+
+ main .bio-texto h2,h4{
+     margin: 10px;
+     text-align: center;
+     font-weight: 400;
+ }
+ main .bio-texto p{
+    font-weight: 100;
+    line-height: 25px;
+ }
+
+/* slider */
+
+
+.articulo-skills{
+    background: #333;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    color: #f0efeb;
+    overflow: hidden;
+}
+.articulo-skills h2{
+    margin-top: 20px;
+}
+.contenedor-slider{
+    width: 100%;
+}
+.slider-contenedor{
+    width: 100%;
+    display: flex;
+   
+}
+
+.contenido-slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+}
+.contenido-slider > img{
+    width: 200px;
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+}
+
+.contenido-slider img:hover{
+    opacity: 1;
+    border:  1px #ffff;
+    transition: 0.5s ease-in-out;
+
+}
+.contenido-slider > div{
+    width: 40%;
+}
+
+.contenido-slider h2{
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.contenido-slider a{
+    color: #fff;
+    background: #332863;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.contenido-slider{
+    background: #333;
+    
+}
+
+ /* proyectos */
+
+ /*--paginas hechas--*/
+main .trabajos{
+     padding: 60px 0px;
+    }
+    
+    main .trabajos-encabezado{
+        text-align: center;
+        padding: 20px;
+        line-height: 25px;
+    }
+    
+    main .trabajos-encabezado h2{
+        padding: 20px;
+        font-size: 300%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    
+    }
+    
+    main .contenedor-trabajos{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    main .trabajo{
+        width: 30%;
+        margin-bottom: 10px;
+    }
+    main .trabajo-textos{
+        text-align: center;
+    }
+    main .trabajo-textos h4{
+        font-size: 30px;
+    }
+
+    main .trabajo-textos a {
+        font-size: 30px;
+        color: #333;
+    }
+    main .thumb img{
+        width: 100%;
+        vertical-align: top;
+        border-radius: 3px;
+    }
+    main .thumb{
+        margin-bottom: 10px;
+        height: 200px;
+    }
+    main .trabajo img:hover{
+        opacity: 0.5;
+        border:  1px #ffff;
+        transition: all 2s ease
+    
+    }
+    /* .trabajo-textos{
+        text-align: center;
+    } */
+
+    .textos{
+        padding: 10px;
+        color: #e63946;
+    }
+
+    /* .textos p{
+        
+    } */
+    /* redes */
+
+    .redes{
+        width: var(--ancho);
+        margin-top: 20px;
+        padding: var(--espacio);
+        margin: 0%;
+        width: var(--ancho);
+
+    }
+
+    .iconos{
+        background-color: var(--blanco);
+        font-size: 30px;
+        margin: 10px;
+        padding: 30px;
+    }
+
+    .iconos:hover{
+        transition: all ease-in-out .3s;
+        box-shadow: -2px 5px 15px 7px rgba(59,53,53,0.74);
+-webkit-box-shadow: -2px 5px 15px 7px rgba(59,53,53,0.74);
+-moz-box-shadow: -2px 5px 15px 7px rgba(59,53,53,0.74);
+    }
+    .icono a{
+        background: var(--negro);
+        font-size: 40px;
+    }
+    .RedesSociales{
+        padding: var(--espacio);
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    /* footer  */
+
+    footer {
+        background: #333;
+        padding: 30px 0px ;
+    }
+
+    
+
+    
+    /* responsive */
+
+    @media screen and (max-width:900px){
+        .contenido-slider > img{
+            width: 250px;
+        }
+    
+        .contenido-slider > div{
+            width: 40%;
+        }
+    
+        .contenido-slider h2{
+            font-size: 23px;
+        }
+    }
+    
+    
+    @media screen and (max-width:700px){
+        .contenido-slider{
+           flex-direction: column-reverse;
+           height: 100%;
+        }
+    
+        .contenido-slider > div{
+            width: 80%;
+        }
+
+        main .bio-texto img{
+            width: 100%;
+        }
+
+        main .bio-texto .contacto img{
+                width: 60%;
+        }
+
+        main .trabajo{
+            width: 45%;
+        }
+    
+    }
+    /* @media screen and (max-width:700px){
+        main .bio-texto img{
+            width: 90%;
+        }   
+
+        main .trabajos{
+            width: 100%;
+        }
+    } */
+
+    @media screen and (max-width:300px){
+        .contenido-slider{
+           flex-direction: column-reverse;
+           height: 100%;
+        }
+    
+        .contenido-slider > div{
+            width: 80%;
+        }
+
+        /* main .bio-texto img{
+            width: 100%;
+        } */
+
+        main .bio-texto .contacto img{
+                width: 60%;
+        }
+
+        main .trabajo{
+            width: 45%;
+        }
+    
+    }
+
+    @media screen and (max-width:425px){
+        nav{
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+
+        nav a{
+            display: inline-block;
+        }
+        nav .enlaces{
+            position: fixed;
+            display: flex;
+            top: 0;
+           background: #3C3B3F;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            transition: all 1s;
+        }
+        nav .icono{
+            display: contents;
+        }
+
+        nav .uno{
+            clip-path: circle(0.0% at 0 0);
+        }
+
+        nav .dos{
+            clip-path: circle(140.9% at 0 0);
+        }
+    }
+
