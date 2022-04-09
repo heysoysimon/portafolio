@@ -43,8 +43,9 @@ header{
 }
 
 nav .icono{
-    font-size: 40px;
+    font-size: 30px;
     display: none;
+    color: #e63946;
 }
 nav{
     text-align: right;
@@ -75,6 +76,8 @@ header .textos-header{
     flex-direction: column;
     text-align: center;
 }
+
+
 
 .textos-header h1{
     font-size: 50px;
@@ -417,40 +420,71 @@ main .trabajos{
     }
 
     @media screen and (max-width:425px){
+       
         nav{
             position: fixed;
             top: 20px;
             left: 20px;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-end;
         }
-
+        
         nav a{
+            color: #fff;
+            text-decoration: none;
             display: inline-block;
         }
-        nav .enlaces{
+        
+        .icono{
+            animation: moverIzquierda 1s ease-in;
+            z-index: 1000000;
+        }
+        
+        .enlaces{
             position: fixed;
             display: flex;
             top: 0;
-           background: #3C3B3F;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #000;
             justify-content: space-around;
             align-items: center;
             height: 100vh;
             left: 0;
             flex-direction: column;
             width: 100%;
-            transition: all 1s;
+            transition: 1s ease;
+            background: #0F2027;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+        
+        
         }
-        nav .icono{
-            display: contents;
+        
+        .uno{
+            clip-path: circle(0.0% at 100% 0);
+        }
+        
+        .dos{
+            -webkit-clip-path: circle(150% at 0 0);
+            clip-path: circle(150% at 0 0);
+        }
+        
+        .wave{
+            display: none;
         }
 
-        nav .uno{
-            clip-path: circle(0.0% at 0 0);
+        nav .icono {
+            display: block;
+            font-size: 30px;
         }
 
-        nav .dos{
-            clip-path: circle(140.9% at 0 0);
+        nav i{
+            color: #e63946;
         }
+        /* html{
+            scroll-behavior: inherit;
+        } */
     }
 
