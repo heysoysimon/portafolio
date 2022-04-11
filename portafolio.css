@@ -97,6 +97,30 @@ header .textos-header{
 }
 /*--MAIN---*/
 
+/* modal */
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f0efebd2;
+}
+.contenido-modal{
+    position: relative;
+    background: #f0efeb;
+    margin:auto;
+    width: 30%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4) ;
+}
+
+.close:hover{
+    cursor: pointer;
+}
 /* quien soy */
  main .bio{
      width: var(--ancho);
@@ -469,6 +493,9 @@ main .trabajos{
         .dos{
             -webkit-clip-path: circle(150% at 0 0);
             clip-path: circle(150% at 0 0);
+            /* clip-path: circle(50.2% at 100% 47%); */
+            /* clip-path: circle(73.6% at 100% 1%); */
+            /* clip-path: circle(47.4% at 100% 47%); */
         }
         
         .wave{

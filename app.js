@@ -1,7 +1,6 @@
+// slider 
 let slider = document.querySelector(".slider-contenedor")
 let sliderIndividual = document.querySelectorAll(".contenido-slider")
-const flechaAfter = document.querySelector('#after')
-const flechaBefore = document.querySelector('#before')
 let contador = 1;
 let width = sliderIndividual[0].clientWidth;
 let intervalo = 3000;
@@ -16,8 +15,6 @@ setInterval(function(){
     slides();
 },intervalo);
 
-// flechaAfter.addEventListener('click', ()=>changerPosition(1) )
-// flechaBefore.addEventListener('click', ()=>changerPosition(-1) )
 
 function changerPosition(change){
     console.log(change)
@@ -51,4 +48,14 @@ boton.addEventListener("click", function (){
         enlaces.className = ('enlaces uno')
         contadorMenu = 0
     }
+})
+
+// ventana modal 
+let modal = document.querySelector('miModal')
+let flex = document.querySelector('flex')
+let abrir = document.querySelector('abrir')
+let cerrar = document.querySelector('close')
+
+abrir.addEventListener("click", function (){
+    modal.style.display = 'block'
 })
