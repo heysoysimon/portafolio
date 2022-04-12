@@ -302,6 +302,9 @@ main .trabajos{
         vertical-align: top;
         border-radius: 3px;
     }
+    main .trabajo img a{
+        scroll-behavior: none;
+    } 
     main .thumb{
         margin-bottom: 10px;
         height: 200px;
