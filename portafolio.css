@@ -114,12 +114,32 @@ header .textos-header{
     position: relative;
     background: #f0efeb;
     margin:auto;
-    width: 30%;
+    width: 90%;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4) ;
 }
 
+.imagen-modal{
+    width: 90%;
+}
 .close:hover{
     cursor: pointer;
+}
+
+.modal-body img{
+    width: 50%;
+    margin: 10px;
+    float: left;
+}
+/* main .trabajo-textos{
+    text-align: center;
+} */
+main .trabajo-textos h4{
+    font-size: 20px;
+}
+
+main .trabajo-textos a {
+    font-size: 30px;
+    color: #333;
 }
 /* quien soy */
  main .bio{
@@ -286,17 +306,7 @@ main .trabajos{
         width: 30%;
         margin-bottom: 10px;
     }
-    main .trabajo-textos{
-        text-align: center;
-    }
-    main .trabajo-textos h4{
-        font-size: 30px;
-    }
-
-    main .trabajo-textos a {
-        font-size: 30px;
-        color: #333;
-    }
+    
     main .thumb img{
         width: 100%;
         vertical-align: top;

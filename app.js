@@ -51,23 +51,36 @@ boton.addEventListener("click", function (){
 })
 
 // ventana modal 
+window.onload = function(){
 let modal = document.getElementById('miModal');
-let flex = document.getElementById('flex');
+let abrir2 = document.getElementById('abrir2');
 let abrir = document.getElementById('abrir');
 let cerrar = document.getElementById('close');
+let flex = document.getElementById('flex');
 
-abrir.addEventListener('click', function(){
-    modal.style.display = 'block';
-});
+modalWindow(modal, abrir, abrir2,cerrar,flex)
+}
 
-cerrar.addEventListener('click', function(){
-    modal.style.display = 'none';
-});
 
-// para los costados del modal 
-window.addEventListener('click', function(e){
-    console.log(e.target);
-    if(e.target == flex){
-        modal.style.display = 'none';
-    }
-});
+
+function modalWindow(modal, abrir, abrir2,cerrar,flex){
+
+     cerrar.addEventListener('click', e =>{
+         modal.style.display = 'none'
+     })
+
+
+     abrir2.addEventListener('click', e =>{
+        modal.style.display = 'block';
+    })
+     abrir.addEventListener('click', e =>{
+        modal.style.display = 'block';
+    })
+
+    window.addEventListener('click', function(e){
+        console.log(e.target);
+        if(e.target == flex){
+            modal.style.display = 'none';
+        }
+    });
+}
