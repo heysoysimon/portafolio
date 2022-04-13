@@ -42,6 +42,15 @@ header{
     position: relative;
 }
 
+nav .subir{
+    font-size: 40px;
+    color: #333;
+    position: fixed;
+    margin-bottom:10px ;
+}
+nav .subir:hover{
+    color: #e63946;
+}
 nav .icono{
     font-size: 30px;
     display: none;
@@ -193,7 +202,7 @@ main .redes a:hover{
      width: 40%;
      margin: 5px;
      float: left;
-     border-radius: 28% 72% 49% 51% / 62% 80% 20% 38% ;
+     border-radius: 66% 34% 70% 30% / 30% 61% 39% 70%;
  }
 
  main .bio-texto h2,h4{
@@ -206,9 +215,18 @@ main .redes a:hover{
     line-height: 25px;
  }
 
+
+.texto-skills h2{
+    margin: 10px;
+    padding: 20px;
+    font-size: 40px;
+    text-align:center;
+    color: #333;
+    box-shadow: -4px 0px 59px 1px rgba (0,0,0,0.75);
+-webkit-box-shadow: -4px 0px 59px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 0px 59px 1px rgba (0,0,0,0.75);
+}
 /* slider */
-
-
 .articulo-skills{
     background: #333;
     text-align: center;
@@ -217,9 +235,7 @@ main .redes a:hover{
     color: #f0efeb;
     overflow: hidden;
 }
-.articulo-skills h2{
-    margin-top: 20px;
-}
+
 .contenedor-slider{
     width: 100%;
 }
@@ -461,6 +477,10 @@ main .trabajos{
         .contenido-slider{
             background: none;
         }
+
+        nav .subir{
+            display: none;
+        }
         nav{
             position: fixed;
             top: 20px;
@@ -527,5 +547,19 @@ main .trabajos{
         /* html{
             scroll-behavior: inherit;
         } */
+
+        main .thumb {
+            margin-bottom: 10px;
+            height: 33%;
+        }
+
+        main .trabajos-encabezado h2 {
+            line-height:25px ; 
+            padding: 10px 0;
+        }
+
+        main .bio-texto .contacto img {
+            width: 90%;
+        }
     }
 

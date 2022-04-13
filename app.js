@@ -38,17 +38,27 @@ function slides(){
 let boton = document.getElementById('icono')
 let enlaces = document.getElementById('enlaces')
 let contadorMenu = 0
+let DOM = document.getElementById('DOM')
 
-boton.addEventListener("click", function (){
+boton.addEventListener("click", e  => {
     if(contadorMenu ==0){
         enlaces.className = ("enlaces dos")
         contadorMenu=1
     }else{
         enlaces.classList.remove('dos')
         enlaces.className = ('enlaces uno')
+        enlaces.className=('enlaces uno')
         contadorMenu = 0
+        
     }
 })
+
+// window.addEventListener('click', function(e){
+//     console.log(e.target);
+//     if(e.target == DOM){
+//         enlaces.style.display = 'none';
+//     }
+// })
 
 // ventana modal 
 // window.onload = function(){
