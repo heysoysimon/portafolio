@@ -51,36 +51,36 @@ boton.addEventListener("click", function (){
 })
 
 // ventana modal 
-window.onload = function(){
-let modal = document.getElementById('miModal');
-let abrir2 = document.getElementById('abrir2');
-let abrir = document.getElementById('abrir');
-let cerrar = document.getElementById('close');
-let flex = document.getElementById('flex');
+// window.onload = function(){
+// let modal = document.getElementById('miModal');
+// let abrir2 = document.getElementById('abrir2');
+// let abrir = document.getElementById('abrir');
+// let cerrar = document.getElementById('close');
+// let flex = document.getElementById('flex');
 
-modalWindow(modal, abrir, abrir2,cerrar,flex)
-}
-
-
-
-function modalWindow(modal, abrir, abrir2,cerrar,flex){
-
-     cerrar.addEventListener('click', e =>{
-         modal.style.display = 'none'
-     })
+// modalWindow(modal, abrir, abrir2,cerrar,flex)
+// }
 
 
-     abrir2.addEventListener('click', e =>{
-        modal.style.display = 'block';
-    })
-     abrir.addEventListener('click', e =>{
-        modal.style.display = 'block';
-    })
 
-    window.addEventListener('click', function(e){
-        console.log(e.target);
-        if(e.target == flex){
-            modal.style.display = 'none';
-        }
-    });
-}
+// function modalWindow(modal, abrir, abrir2,cerrar,flex){
+
+//      cerrar.addEventListener('click', e =>{
+//          modal.style.display = 'none'
+//      })
+
+
+//      abrir2.addEventListener('click', e =>{
+//         modal.style.display = 'block';
+//     })
+//      abrir.addEventListener('click', e =>{
+//         modal.style.display = 'block';
+//     })
+
+//     window.addEventListener('click', function(e){
+//         console.log(e.target);
+//         if(e.target == flex){
+//             modal.style.display = 'none';
+//         }
+//     });
+// }

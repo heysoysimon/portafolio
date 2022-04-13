@@ -98,7 +98,7 @@ header .textos-header{
 /*--MAIN---*/
 
 /* modal */
-
+/* 
 .modal{
     display: none;
     position: fixed;
@@ -129,10 +129,10 @@ header .textos-header{
     width: 50%;
     margin: 10px;
     float: left;
-}
-/* main .trabajo-textos{
-    text-align: center;
 } */
+main .trabajo-textos{
+    text-align: center;
+}
 main .trabajo-textos h4{
     font-size: 20px;
 }
@@ -386,7 +386,7 @@ main .trabajos{
 
     @media screen and (max-width:900px){
         .contenido-slider > img{
-            width: 250px;
+            width: 141px;
         }
     
         .contenido-slider > div{
@@ -458,6 +458,9 @@ main .trabajos{
 
     @media screen and (max-width:425px){
        
+        .contenido-slider{
+            background: none;
+        }
         nav{
             position: fixed;
             top: 20px;
@@ -484,8 +487,8 @@ main .trabajos{
             display: flex;
             top: 0;
             background: #000;
-            justify-content: space-around;
-            align-items: center;
+            justify-content: space-evenly;
+            /* align-items: center; */
             height: 100vh;
             left: 0;
             flex-direction: column;
@@ -505,10 +508,8 @@ main .trabajos{
         
         .dos{
             -webkit-clip-path: circle(150% at 0 0);
-            clip-path: circle(150% at 0 0);
-            /* clip-path: circle(50.2% at 100% 47%); */
-            /* clip-path: circle(73.6% at 100% 1%); */
-            /* clip-path: circle(47.4% at 100% 47%); */
+            clip-path: circle(57.6% at 100% 51%);
+            
         }
         
         .wave{
